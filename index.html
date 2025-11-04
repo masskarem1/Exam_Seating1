@@ -15,19 +15,19 @@
 
             <!-- Header layout --><header class="flex flex-col sm:flex-row justify-between items-center pb-6 border-b border-gray-800/10 mb-6">
                 
-                <!-- Group 1: Logo (no white background div) -->
-                <!-- UPDATED: order-1 (top on mobile), sm:order-1 (left on desktop) --><div class="flex-shrink-0 order-1 sm:order-1">
-                    <img src="https://i.postimg.cc/N0YfSdFR/MUST.png" 
-                         alt="University Logo" 
-                         class="w-24 h-24 object-contain">
-                </div>
-
-                <!-- Group 2: Course Info (Dark Text) -->
-                <!-- UPDATED: order-2 (bottom on mobile), sm:order-2 (right on desktop) -->
-                <!-- UPDATED: text-center (aligns text center) --><div class="text-center mt-4 sm:mt-0 order-2 sm:order-2">
+                <!-- Group 1: Course Info (Dark Text) -->
+                <!-- order-2 (bottom on mobile), sm:order-1 (left on desktop) -->
+                <!-- text-center (aligns text center) --><div class="text-center mt-4 sm:mt-0 order-2 sm:order-1">
                     <h2 class="text-gray-900 text-lg font-bold">Course: PHYS.101</h2>
                     <p class="text-gray-700 text-sm">Faculty of Oral and Dental Surgery</p>
                     <p class="text-gray-700 text-sm">Instructor: Dr. Mohamed Ali</p>
+                </div>
+                
+                <!-- Group 2: Logo -->
+                <!-- order-1 (top on mobile), sm:order-2 (right on desktop) --><div class="flex-shrink-0 order-1 sm:order-2">
+                    <img src="https://i.postimg.cc/N0YfSdFR/MUST.png" 
+                         alt="University Logo" 
+                         class="w-24 h-24 object-contain">
                 </div>
                 
             </header>
@@ -60,43 +60,60 @@
                         
                         <p class="mb-3 text-gray-600">2 students on the right, 4 in the middle, 2 on the left.</p>
                         
-                        <!-- UPDATED: flex-col with space-y-2 -->
-                        <div class="flex flex-col space-y-2 justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
+                        <!-- 3 Rows of students, negative margin for overlap --><div class="flex flex-col justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
                             
                             <!-- Row 1 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="flex space-x-1"> <!-- Mobile: space-x-1 -->
+                                    <!-- Mobile: w-5, Desktop: sm:w-8 --><svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div> <!-- Mobile: w-4 aisle -->
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div> <!-- Mobile: w-4 aisle -->
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
-                            <!-- Row 2 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                            <!-- Row 2 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                            </div>
+                            <!-- Row 3 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
                         </div>
@@ -107,45 +124,63 @@
                         
                         <p class="mb-3 text-gray-600">2 students on the right, 5 in the middle, 2 on the left.</p>
                         
-                        <!-- UPDATED: flex-col with space-y-2 -->
-                        <div class="flex flex-col space-y-2 justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
+                        <div class="flex flex-col justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
                             
                             <!-- Row 1 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div> <!-- Mobile: w-3 aisle -->
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div> <!-- Mobile: w-3 aisle -->
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
-                            <!-- Row 2 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                            <!-- Row 2 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                            </div>
+                            <!-- Row 3 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
                         </div>
@@ -181,43 +216,60 @@
                         
                         <p class="mb-3 text-gray-600">طالبين على اليمين، 4 في المنتصف، طالبين على اليسار.</p>
                         
-                        <!-- UPDATED: flex-col with space-y-2 -->
-                        <div class="flex flex-col space-y-2 justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
+                        <div class="flex flex-col justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
                             
                             <!-- Row 1 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
-                            <!-- Row 2 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                            <!-- Row 2 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-8 sm:w-16"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                            </div>
+                            <!-- Row 3 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-4 sm:w-16"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
                         </div>
@@ -228,45 +280,63 @@
                         
                         <p class="mb-3 text-gray-600">طالبين على اليمين، 5 في المنتصف، طالبين على اليسار.</p>
                         
-                        <!-- UPDATED: flex-col with space-y-2 -->
-                        <div class="flex flex-col space-y-2 justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
+                        <div class="flex flex-col justify-center p-4 bg-white/30 rounded-lg border border-white/40" dir="ltr">
                             
                             <!-- Row 1 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
-                            <!-- Row 2 --><div class="flex justify-center items-center">
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                            <!-- Row 2 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
-                                <div class="w-6 sm:w-12"></div>
-                                <div class="flex space-x-2">
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
-                                    <!-- Student Icon --><svg class="w-8 sm:w-10 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                            </div>
+                            <!-- Row 3 (negative margin) --><div class="flex justify-center items-center -mt-2 sm:-mt-3">
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                </div>
+                                <div class="w-3 sm:w-12"></div>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
+                                    <svg class="w-5 sm:w-8 h-12 sm:h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" title="Student"><circle cx="12" cy="7" r="4"></circle><path d="M18 12c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v8h12v-8z" opacity="0.9"></path></svg>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +356,7 @@
                     Click the button above to find your assigned date and exam interval.
                     <br>
                     اضغط الزر في الأعلى لمعرفة تاريخ وفترة الامتحان.
-                </WELCOME>
+                </p>
             </div>
 
         </div>
