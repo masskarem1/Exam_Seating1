@@ -19,8 +19,9 @@
                 </div>
                 
                 <!-- UPDATED: Single Language Toggle Button with Glassmorphism styles --><div class="flex space-x-2">
-                    <button id="btn-toggle-lang" class="px-5 py-2 text-sm font-medium rounded-md bg-white/10 text-white border border-white/30 hover:bg-white/20 transition-all duration-300 focus:outline-none w-28 text-center">
-                        English
+                    <!-- UPDATED: Resized button (w-16) and changed text to 'En' -->
+                    <button id="btn-toggle-lang" class="py-3 text-lg font-medium rounded-md bg-white/10 text-white border border-white/30 hover:bg-white/20 transition-all duration-300 focus:outline-none w-16 text-center">
+                        En
                     </button>
                 </div>
             </header>
@@ -106,7 +107,7 @@
                     <!-- Theater 216 --><div>
                         <h3 class="text-lg sm:text-xl font-medium mb-3 text-white">مدرج 216 (توزيع 2-4-2)</h3>
                         <!-- UPDATED: Text color to light gray --><p class="mb-3 text-gray-200">عمودان على اليمين، 4 في المنتصف، عمودان على اليسار.</p>
-                        <!-- UPDATED: Inner box with subtle glass style --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20">
+                        <!-- UPDATED: Added dir="ltr" to force LTR layout for the visual guide --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20" dir="ltr">
                             <!-- 2 seats --><div class="flex space-x-2">
                                 <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
                                 <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
@@ -128,7 +129,7 @@
                     <!-- Theater 140 --><div>
                         <h3 class="text-lg sm:text-xl font-medium mb-3 text-white">مدرج 140 (توزيع 2-5-2)</h3>
                         <!-- UPDATED: Text color to light gray --><p class="mb-3 text-gray-200">عمودان على اليمين، 5 في المنتصف، عمودان على اليسار.</p>
-                        <!-- UPDATED: Inner box with subtle glass style --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20">
+                        <!-- UPDATED: Added dir="ltr" to force LTR layout for the visual guide --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20" dir="ltr">
                             <!-- 2 seats --><div class="flex space-x-2">
                                 <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
                                 <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
@@ -167,7 +168,7 @@
         </div>
     </div>
 
-    <script>
+        <script>
         // Get all the elements we need
         const btnToggleLang = document.getElementById('btn-toggle-lang');
         const langEn = document.getElementById('lang-en');
@@ -182,13 +183,13 @@
             if (lang === 'en') {
                 langEn.classList.remove('hidden');
                 langAr.classList.add('hidden');
-                btnToggleLang.textContent = 'العربية'; // Show 'Arabic' as the next option
+                btnToggleLang.textContent = 'ع'; // UPDATED: Show 'ع' as the next option
                 htmlTag.lang = 'en';
                 htmlTag.dir = 'ltr';
             } else {
                 langAr.classList.remove('hidden');
                 langEn.classList.add('hidden');
-                btnToggleLang.textContent = 'English'; // Show 'English' as the next option
+                btnToggleLang.textContent = 'En'; // UPDATED: Show 'En' as the next option
                 htmlTag.lang = 'ar';
                 // FIXED: Removed the 'V' character that was causing the syntax error
                 htmlTag.dir = 'rtl';
@@ -216,4 +217,5 @@
 
 </body>
 </html>
+
 
