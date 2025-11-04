@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Instructions</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- UPDATED: Added vibrant gradient background --><body class="bg-gradient-to-br from-blue-600 via-purple-600 to-teal-500 min-h-screen font-sans">
+
+    <!-- Set container padding for mobile first --><div class="container mx-auto p-4 max-w-4xl">
+        <!-- UPDATED: Main Card with Glassmorphism styles --><div class="bg-white/20 backdrop-blur-lg border border-white/30 p-6 sm:p-10 rounded-xl shadow-lg">
+
+            <!-- Logo and Language Switcher Header --><header class="flex flex-col sm:flex-row justify-between items-center pb-6 border-b border-white/20 mb-6">
+                <!-- UPDATED: White banner/box for the logo --><div class="bg-white p-2 rounded-lg mb-4 sm:mb-0">
+                    <img src="https://smartlearning.must.edu.eg/pluginfile.php/1/core_admin/logocompact/300x300/1715171530/logo.png" 
+                         alt="University Logo" 
+                         class="w-24 h-24 object-contain">
+                </div>
+                
+                <!-- UPDATED: Single Language Toggle Button with Glassmorphism styles --><div class="flex space-x-2">
+                    <button id="btn-toggle-lang" class="px-5 py-2 text-sm font-medium rounded-md bg-white/10 text-white border border-white/30 hover:bg-white/20 transition-all duration-300 focus:outline-none w-28 text-center">
+                        English
+                    </button>
+                </div>
+            </header>
+
+            <!-- English Instructions (Hidden by default) --><div id="lang-en" class="hidden">
+                <!-- UPDATED: Text color to white --><h1 class="text-2xl sm:text-3xl font-bold text-white mb-6">Exam Instructions</h1>
+                
+                <!-- UPDATED: Text color to light gray --><ul class="list-disc list-inside space-y-3 text-gray-100 text-base sm:text-lg mb-8">
+                    <li>Please arrive on time for the scheduled appointment.</li>
+                    <li>Bring your own tools (e.g., calculator), as exchanging items will not be allowed.</li>
+                    <li>Sit in the designated seats without leaving any gaps (you must fill empty seats first).</li>
+                    <li><strong>Exam Duration:</strong> 15 minutes.</li>
+                    <li><strong>Exam Format:</strong> 10 Multiple Choice Questions (MCQ).</li>
+                    <li><strong>Grades:</strong> The exam is out of 15 points (1.5 points per question).</li>
+                    <!-- UPDATED: Warning text color to yellow for contrast --><li class="font-bold text-yellow-300">Important: You MUST shade the bubble sheet. The question paper will not be graded.</li>
+                </ul>
+
+                <!-- UPDATED: Text color to white --><h2 class="text-xl sm:text-2xl font-semibold text-white mb-4">Seating Arrangement Guide</h2>
+                <div class="space-y-6">
+                    <!-- Theater 216 --><div>
+                        <h3 class="text-lg sm:text-xl font-medium mb-3 text-white">Theater 216 TH PH (2-4-2 Layout)</h3>
+                        <!-- UPDATED: Text color to light gray --><p class="mb-3 text-gray-200">2 columns on the right, 4 in the middle, 2 on the left.</p>
+                        <!-- UPDATED: Inner box with subtle glass style --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20">
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-6 sm:w-16"></div>
+                            <!-- 4 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-6 sm:w-16"></div>
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Theater 140 --><div>
+                        <h3 class="text-lg sm:text-xl font-medium mb-3 text-white">Theater 140 TH PH (2-5-2 Layout)</h3>
+                        <!-- UPDATED: Text color to light gray --><p class="mb-3 text-gray-200">2 columns on the right, 5 in the middle, 2 on the left.</p>
+                        <!-- UPDATED: Inner box with subtle glass style --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20">
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-4 sm:w-12"></div>
+                            <!-- 5 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- AAisle --><div class="w-4 sm:w-12"></div>
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arabic Instructions (Default) --><div id="lang-ar" dir="rtl">
+                <!-- UPDATED: Text color to white --><h1 class="text-2xl sm:text-3xl font-bold text-white mb-6">تعليمات الامتحان</h1>
+                
+                <!-- UPDATED: Text color to light gray --><ul class="list-disc list-inside space-y-3 text-gray-100 text-base sm:text-lg mb-8">
+                    <li>الرجاء الالتزام بالحضور في الموعد المحدد.</li>
+                    <li>أحضر أدواتك الخاصة (مثل الآلة الحاسبة)، حيث لن يُسمح بتبادل الأدوات.</li>
+                    <li>الجلوس في الأماكن المخصصة بدون ترك أي فراغات (يجب ملء الفراغات أولاً).</li>
+                    <li><strong>مدة الامتحان:</strong> 15 دقيقة.</li>
+                    <li><strong>تكوين الامتحان:</strong> 10 أسئلة اختيار من متعدد (MCQ).</li>
+                    <li><strong>الدرجات:</strong> الامتحان من 15 درجة (كل سؤال 1.5 درجة).</li>
+                    <!-- UPDATED: Warning text color to yellow for contrast --><!-- FIXED: Corrected typo in 'الأسئلة' --><li class="font-bold text-yellow-300">هام: يجب تظليل "البابل شيت" (ورقة الإجابة) بدقة، حيث لن يتم تصحيح ورقة الأسئلة.</li>
+                </ul>
+
+                <!-- UPDATED: Text color to white --><!-- FIXED: Corrected typo in Arabic heading --><h2 class="text-xl sm:text-2xl font-semibold text-white mb-4">دليل توزيع أماكن الجلوس</h2>
+                <div class="space-y-6">
+                    <!-- Theater 216 --><div>
+                        <h3 class="text-lg sm:text-xl font-medium mb-3 text-white">مدرج 216 (توزيع 2-4-2)</h3>
+                        <!-- UPDATED: Text color to light gray --><p class="mb-3 text-gray-200">عمودان على اليمين، 4 في المنتصف، عمودان على اليسار.</p>
+                        <!-- UPDATED: Inner box with subtle glass style --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20">
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-6 sm:w-16"></div>
+                            <!-- 4 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-6 sm:w-16"></div>
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Theater 140 --><div>
+                        <h3 class="text-lg sm:text-xl font-medium mb-3 text-white">مدرج 140 (توزيع 2-5-2)</h3>
+                        <!-- UPDATED: Text color to light gray --><p class="mb-3 text-gray-200">عمودان على اليمين، 5 في المنتصف، عمودان على اليسار.</p>
+                        <!-- UPDATED: Inner box with subtle glass style --><div class="flex justify-center items-center p-4 bg-black/10 rounded-lg border border-white/20">
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-4 sm:w-12"></div>
+                            <!-- 5 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                            <!-- Aisle --><div class="w-4 sm:w-12"></div>
+                            <!-- 2 seats --><div class="flex space-x-2">
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                                <div class="w-6 sm:w-8 h-12 sm:h-16 bg-blue-400 rounded" title="Column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Link to Seating App --><!-- UPDATED: Border color of the top line --><div class="mt-10 pt-6 border-t border-white/20 text-center">
+                <!-- This button is kept solid green for a clear Call to Action --><a href="https://script.google.com/macros/s/AKfycby_DnwNAQLIi0Iuk4I8Pd8H5NgvQEf6xaTaYQY11DLa07R8I3MP1LflLCD9lGxTEYc3/exec" 
+                   target="_blank" 
+                   class="w-full sm:w-auto inline-block px-10 py-3 bg-green-600 text-white text-lg font-medium rounded-lg hover:bg-green-700 transition duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    Find Your Seat / ابحث عن مكانك
+                </a>
+                <!-- UPDATED: Text color to light gray --><!-- FIXED: Corrected closing </P> tag to </p> --><p class="mt-4 text-sm text-gray-200">
+                    Click the button above to find your assigned date and exam interval.
+                    <br>
+                    اضغط الزر في الأعلى لمعرفة تاريخ وفترة الامتحان.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Get all the elements we need
+        const btnToggleLang = document.getElementById('btn-toggle-lang');
+        const langEn = document.getElementById('lang-en');
+        const langAr = document.getElementById('lang-ar');
+        const htmlTag = document.documentElement;
+
+        /**
+         * Sets the language of the page and updates the toggle button.
+         * @param {string} lang - 'en' or 'ar'
+         */
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                langEn.classList.remove('hidden');
+                langAr.classList.add('hidden');
+                btnToggleLang.textContent = 'العربية'; // Show 'Arabic' as the next option
+                htmlTag.lang = 'en';
+                htmlTag.dir = 'ltr';
+            } else {
+                langAr.classList.remove('hidden');
+                langEn.classList.add('hidden');
+                btnToggleLang.textContent = 'English'; // Show 'English' as the next option
+                htmlTag.lang = 'ar';
+                // FIXED: Removed the 'V' character that was causing the syntax error
+                htmlTag.dir = 'rtl';
+            }
+        }
+
+        /**
+         * Toggles the language based on the current setting.
+         */
+        function toggleLanguage() {
+            const currentLang = htmlTag.lang || 'ar'; // Get current lang, default to 'ar'
+            if (currentLang === 'ar') {
+                setLanguage('en');
+            } else {
+                setLanguage('ar');
+            }
+        }
+
+        // Add the click listener to the toggle button
+        btnToggleLang.addEventListener('click', toggleLanguage);
+
+        // Set initial language (Arabic is default)
+        setLanguage('ar');
+    </sCRIPT>
+
+</body>
+</html>
+
